@@ -4,7 +4,7 @@ import Test
 Test.@testset "Unit tests              " begin
     Test.@test( Base.VERSION >= VersionNumber("1.0") )
 
-    Test.@test( PredictMDExtra.version() > VersionNumber(0) )
+    Test.@test( PredictMDExtra.version() >= VersionNumber(0) )
 
     Test.@test( isdir(PredictMDExtra.pkg_dir()) )
     Test.@test( isdir(PredictMDExtra.pkg_dir("ci")) )

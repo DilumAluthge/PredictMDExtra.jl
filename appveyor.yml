@@ -54,22 +54,22 @@ install:
 
 build_script:
     # Need to convert from shallow to complete for Pkg.clone to work
-    - IF EXIST .git\shallow (git fetch --unshallow)
+    # - IF EXIST .git\shallow (git fetch --unshallow)
+    # - C:\projects\julia\bin\julia --check-bounds=yes --color=yes -e
+        # "import Pkg; Pkg.clone(pwd(), \"PredictMDExtra\")"
     - C:\projects\julia\bin\julia --check-bounds=yes --color=yes -e
-        "import Pkg; Pkg.clone(pwd(), \"PredictMDExtra\")"
-    - C:\projects\julia\bin\julia --check-bounds=yes --color=yes -e
-        "import Pkg; Pkg.build(\"PredictMDExtra\")"
+        "import Pkg; Pkg.build(\"PredictMDExtra\");"
 
 test_script:
     - C:\projects\julia\bin\julia --check-bounds=yes --color=yes -e
-        "import PredictMDExtra"
+        "import PredictMDExtra;"
     - C:\projects\julia\bin\julia --check-bounds=yes --color=yes -e
-        "import Pkg; Pkg.test(\"PredictMDExtra\"; coverage=true)"
+        "import Pkg; Pkg.test(\"PredictMDExtra\"; coverage=true);"
 
 on_success:
     - C:\projects\julia\bin\julia --check-bounds=yes --color=yes -e
-        "import Pkg; Pkg.add(\"Coverage\")"
+        "import Pkg; try Pkg.add("Coverage") catch end;"
     - C:\projects\julia\bin\julia --check-bounds=yes --color=yes -e
-        "import Pkg; cd(Pkg.dir(\"PredictMDExtra\"));using Coverage;Codecov.submit(Codecov.process_folder());"
+        "import Coverage; import PredictMDExtra; cd(PredictMDExtra.pkg_dir()); Coverage.Codecov.submit(Coverage.Codecov.process_folder());"
 
 ##### End of file
