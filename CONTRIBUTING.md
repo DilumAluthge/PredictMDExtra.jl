@@ -186,7 +186,7 @@ import Pkg
 p = Pkg.PackageSpec(
 	name="PredictMDExtra",
 	url="https://github.com/DilumAluthge/PredictMDExtra.jl",
-	uuid="5c0c5c38-9dd5-11e8-3ab7-453bd9ce6c97",
+	uuid="d14d998a-9e6b-11e8-16d3-6f2879ea456d",
 	)
 Pkg.develop(p)
 ```

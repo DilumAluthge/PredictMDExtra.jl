@@ -20,7 +20,7 @@ julia --check-bounds=yes --color=yes -e '
 
 julia --check-bounds=yes --color=yes -e '
     import Pkg;
-    Pkg.add("Coverage");
+    try Pkg.add("Coverage") catch end;
     '
 
 julia --check-bounds=yes --color=yes -e '
