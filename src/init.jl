@@ -2,7 +2,9 @@
 
 function __init__()::Nothing
     @info(string("This is PredictMDExtra, version ", version()))
+    @debug(string("PredictMDExtra debugging messages are enabled"))
     @info(string("For help, please visit https://www.predictmd.net"))
+    @info(string("PredictMD package directory: \"", PredictMD.pkg_dir(), "\""))
     return nothing
 end
 
