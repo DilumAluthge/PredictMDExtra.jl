@@ -4,6 +4,10 @@ branches:
     except:
         - gh-pages
 
+env:
+    global:
+        - JULIA_DEBUG="all"
+
 git:
     depth: 99999999
 
