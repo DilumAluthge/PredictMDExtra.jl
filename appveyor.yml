@@ -8,6 +8,8 @@ build:
     verbosity: detailed
 
 environment:
+    global:
+        JULIA_DEBUG: "all"
     matrix:
         - JULIA_URL: "https://julialang-s3.julialang.org/bin/winnt/x64/1.0/julia-1.0-latest-win64.exe"
 
