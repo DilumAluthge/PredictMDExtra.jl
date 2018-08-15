@@ -12,6 +12,8 @@ include(joinpath("import_required_packages.jl"))
 
 include(joinpath("import_optional_packages.jl"))
 
+include(joinpath("welcome.jl"))
+
 include(joinpath("init.jl"))
 
 end # End module PredictMDExtra
