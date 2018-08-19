@@ -72,6 +72,6 @@ on_success:
     - C:\projects\julia\bin\julia --check-bounds=yes --color=yes -e
         "import Pkg; try Pkg.add("Coverage") catch end;"
     - C:\projects\julia\bin\julia --check-bounds=yes --color=yes -e
-        "import Coverage; import PredictMDExtra; cd(PredictMDExtra.pkg_dir()); Coverage.Codecov.submit(Coverage.Codecov.process_folder());"
+        "import Coverage; import PredictMDExtra; cd(PredictMDExtra.package_directory()); Coverage.Codecov.submit(Coverage.Codecov.process_folder());"
 
 ##### End of file

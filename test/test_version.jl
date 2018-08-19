@@ -9,8 +9,8 @@ Test.@test( PredictMDExtra.version(TestModuleA) == VersionNumber("1.2.3") )
 Test.@test( PredictMDExtra.version(TestModuleB) == VersionNumber("4.5.6") )
 
 Test.@test_throws(
-    _TomlFile(joinpath(mktempdir(),"1","2","3","4")),
     ErrorException,
+    PredictMDExtra._TomlFile(joinpath(mktempdir(),"1","2","3","4")),
     )
 
 ##### End of file

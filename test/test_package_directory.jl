@@ -19,8 +19,8 @@ Test.@test( isdir( PredictMDExtra.package_directory(
             ) ) )
 
 Test.@test_throws(
-    PredictMDExtra.package_directory(TestModuleC),
     ErrorException,
+    PredictMDExtra.package_directory(TestModuleC),
     )
 
 ##### End of file
