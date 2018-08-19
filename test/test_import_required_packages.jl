@@ -25,14 +25,14 @@ Test.@test( isa(DataDeps, Module) )
 import DataFrames
 Test.@test( isa(DataFrames, Module) )
 
-# import DecisionTree
-# Test.@test( isa(DecisionTree, Module) )
+import DecisionTree
+Test.@test( isa(DecisionTree, Module) )
 
 import Documenter
 Test.@test( isa(Documenter, Module) )
 
-# import Flux
-# Test.@test( isa(Flux, Module) )
+import Flux
+Test.@test( isa(Flux, Module) )
 
 # import FluxJS
 # Test.@test( isa(FluxJS, Module) )
@@ -40,8 +40,8 @@ Test.@test( isa(Documenter, Module) )
 # import GLM
 # Test.@test( isa(GLM, Module) )
 
-# import GPUArrays
-# Test.@test( isa(GPUArrays, Module) )
+import GPUArrays
+Test.@test( isa(GPUArrays, Module) )
 
 import HTTP
 Test.@test( isa(HTTP, Module) )
@@ -82,8 +82,8 @@ Test.@test( isa(MbedTLS, Module) )
 # import Metalhead
 # Test.@test( isa(Metalhead, Module) )
 
-# import Mux
-# Test.@test( isa(Mux, Module) )
+import Mux
+Test.@test( isa(Mux, Module) )
 
 # import NumericalIntegration
 # Test.@test( isa(NumericalIntegration, Module) )
@@ -100,14 +100,14 @@ Test.@test( isa(PGFPlotsX, Module) )
 import Pkg
 Test.@test( isa(Pkg, Module) )
 
-# import ProgressMeter
-# Test.@test( isa(ProgressMeter, Module) )
+import ProgressMeter
+Test.@test( isa(ProgressMeter, Module) )
 
 # import Query
 # Test.@test( isa(Query, Module) )
 
-# import RData
-# Test.@test( isa(RData, Module) )
+import RData
+Test.@test( isa(RData, Module) )
 
 # import RDatasets
 # Test.@test( isa(RDatasets, Module) )
@@ -133,5 +133,5 @@ Test.@test( isa(UnicodePlots, Module) )
 import ValueHistories
 Test.@test( isa(ValueHistories, Module) )
 
-# import WebSockets
-# Test.@test( isa(WebSockets, Module) )
+import WebSockets
+Test.@test( isa(WebSockets, Module) )
