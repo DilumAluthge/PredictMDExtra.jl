@@ -9,12 +9,12 @@ import Combinatorics
 import Compat
 import DataDeps
 import DataFrames
-# import DecisionTree
+import DecisionTree
 import Documenter
-# import Flux
+import Flux
 # import FluxJS
 # import GLM
-# import GPUArrays
+import GPUArrays
 import HTTP
 # import HTTPClient
 # import HttpServer
@@ -28,15 +28,15 @@ import MNIST
 import MbedTLS
 # import Merlin
 # import Metalhead
-# import Mux
+import Mux
 # import NumericalIntegration
 # import PGFPlots
 import PGFPlotsX
 # import PackageCompiler
 import Pkg
-# import ProgressMeter
+import ProgressMeter
 # import Query
-# import RData
+import RData
 # import RDatasets
 # import ROCAnalysis
 import Requires
@@ -45,6 +45,6 @@ import Test
 # import TimeSeries
 import UnicodePlots
 import ValueHistories
-# import WebSockets
+import WebSockets
 
 ##### End of file
