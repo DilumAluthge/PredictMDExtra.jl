@@ -1,8 +1,7 @@
 ##### Beginning of file
 
 function __init__()::Nothing
-    @info(string("This is PredictMDExtra, version ", version()))
-    @info(string("For help, please visit https://www.predictmd.net"))
+    print_welcome_message()
     return nothing
 end
 
