@@ -1,6 +1,6 @@
 ##### Beginning of file
 
-function print_welcome_message()::Nothing
+function _print_welcome_message()::Nothing
     predictmdextra_version::VersionNumber = version()
     predictmdextra_pkgdir::String = pkg_dir()
     @info(string("This is PredictMDExtra, version ",predictmdextra_version,),)

@@ -1,7 +1,7 @@
 ##### Beginning of file
 
 function __init__()::Nothing
-    print_welcome_message()
+    _print_welcome_message()
     return nothing
 end
 
