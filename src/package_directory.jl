@@ -14,16 +14,16 @@ function _is_package_directory(path::AbstractString)::Bool
     if isfile(joinpath(path, "Project.toml"))
         return true
     else
-        false
+        return false
     end
 end
 
 function _find_package_directory(path::AbstractString)::String
     path::String = abspath(strip(path))
-    if _is_filesystem_root(path)
-        error(string("Could not find the Project.toml file"))
-    elseif isfile(joinpath(path, "Project.toml"))
+    if _is_package_directory(path)
         return path
+    elseif _is_filesystem_root(path)
+        error(string("Could not find the Project.toml file"))
     else
         result = _find_package_directory(dirname(path))
         return result
