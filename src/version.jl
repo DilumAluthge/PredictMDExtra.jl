@@ -22,11 +22,27 @@ function _parse_toml_file(x::_TomlFile)::Dict{String, Any}
     return toml_file_parsed
 end
 
-function _version(x::_TomlFile)::VersionNumber
+function _version_string(x::_TomlFile)::String
     toml_file_parsed::Dict{String, Any} = _parse_toml_file(x)
     version_string::String = toml_file_parsed["version"]
-    version_number_object::VersionNumber = VersionNumber(version_string)
-    return version_number_object
+    return version_string
+end
+
+function _version_string()::String
+    predictmdextra_toml_file::_TomlFile = _TomlFile(
+        package_directory("Project.toml")
+        )
+    result_versionstring::String = _version_string(predictmdextra_toml_file)
+    return result_versionstring
+end
+
+function _version_string(m::Module)::String
+    m_package_directory::String = package_directory(m)
+    m_toml_file::_TomlFile = _TomlFile(
+        joinpath(m_package_directory, "Project.toml")
+        )
+    result_versionstring::String = _version_string(m_toml_file)
+    return result_versionstring
 end
 
 """
@@ -35,11 +51,9 @@ end
 Return the version number of PredictMDExtra.
 """
 function version()::VersionNumber
-    predictmdextra_toml_file::_TomlFile = _TomlFile(
-        package_directory("Project.toml")
-        )
-    result::VersionNumber = _version(predictmdextra_toml_file)
-    return result
+    result_versionstring::String = _version_string()
+    result_versionnumber::VersionNumber = VersionNumber(result_versionstring)
+    return result_versionnumber
 end
 
 """
@@ -51,12 +65,9 @@ that package.
 If module `m` is not part of a Julia package, throws an error.
 """
 function version(m::Module)::VersionNumber
-    m_package_directory::String = package_directory(m)
-    m_toml_file::_TomlFile = _TomlFile(
-        joinpath(m_package_directory, "Project.toml")
-        )
-    result::VersionNumber = _version(m_toml_file)
-    return result
+    result_versionstring::String = _version_string(m)
+    result_versionnumber::VersionNumber = VersionNumber(result_versionstring)
+    return result_versionnumber
 end
 
 ##### End of file
