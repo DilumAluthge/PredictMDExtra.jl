@@ -1,8 +1,10 @@
 <!-- Beginning of file -->
 
-# PredictMDExtra - Install all of the dependencies of PredictMD
+# PredictMDExtra - Install all dependencies of PredictMD
 
 # Main repository: [bcbi/PredictMD.jl](https://github.com/bcbi/PredictMD.jl)
+
+# Website: [https://www.predictmd.net](https://www.predictmd.net)
 
 ---
 
