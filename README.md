@@ -13,7 +13,7 @@
 To install PredictMDExtra, open Julia and run the following lines:
 ```julia
 import Pkg;
-Pkg.add(Pkg.PackageSpec(rev="master", url="https://github.com/DilumAluthge/PredictMDExtra.jl",));
+Pkg.add(Pkg.PackageSpec(rev="master", url="https://github.com/bcbi/PredictMDExtra.jl",));
 ```
 
 ## CI/CD
@@ -29,13 +29,13 @@ Pkg.add(Pkg.PackageSpec(rev="master", url="https://github.com/DilumAluthge/Predi
     <tbody>
         <tr>
             <td>Travis CI</td>
-            <td><a href="https://travis-ci.com/DilumAluthge/PredictMDExtra.jl/branches">
+            <td><a href="https://travis-ci.com/bcbi/PredictMDExtra.jl/branches">
             <img
-            src="https://travis-ci.com/DilumAluthge/PredictMDExtra.jl.svg?branch=master"
+            src="https://travis-ci.com/bcbi/PredictMDExtra.jl.svg?branch=master"
             /></a></td>
-            <td><a href="https://travis-ci.com/DilumAluthge/PredictMDExtra.jl/branches">
+            <td><a href="https://travis-ci.com/bcbi/PredictMDExtra.jl/branches">
             <img
-            src="https://travis-ci.com/DilumAluthge/PredictMDExtra.jl.svg?branch=develop"
+            src="https://travis-ci.com/bcbi/PredictMDExtra.jl.svg?branch=develop"
             /></a></td>
         </tr>
         <!--<tr>
@@ -57,14 +57,14 @@ Pkg.add(Pkg.PackageSpec(rev="master", url="https://github.com/DilumAluthge/Predi
             <td>CodeCov</td>
             <td>
             <a
-            href="https://codecov.io/gh/DilumAluthge/PredictMDExtra.jl/branch/master">
+            href="https://codecov.io/gh/bcbi/PredictMDExtra.jl/branch/master">
             <img
-            src="https://codecov.io/gh/DilumAluthge/PredictMDExtra.jl/branch/master/graph/badge.svg"
+            src="https://codecov.io/gh/bcbi/PredictMDExtra.jl/branch/master/graph/badge.svg"
             /></a></td>
             <td>
             <a
-            href="https://codecov.io/gh/DilumAluthge/PredictMDExtra.jl/branch/develop">
-            <img src="https://codecov.io/gh/DilumAluthge/PredictMDExtra.jl/branch/develop/graph/badge.svg"
+            href="https://codecov.io/gh/bcbi/PredictMDExtra.jl/branch/develop">
+            <img src="https://codecov.io/gh/bcbi/PredictMDExtra.jl/branch/develop/graph/badge.svg"
             /></a></td>
         </tr>
     </tbody>
