@@ -185,7 +185,7 @@ Open Julia and run the following lines:
 import Pkg
 p = Pkg.PackageSpec(
 	name="PredictMDExtra",
-	url="https://github.com/DilumAluthge/PredictMDExtra.jl",
+	url="https://github.com/bcbi/PredictMDExtra.jl",
 	uuid="d14d998a-9e6b-11e8-16d3-6f2879ea456d",
 	)
 Pkg.develop(p)
@@ -204,8 +204,8 @@ Run the following lines:
 
 ```bash
 git config commit.gpgsign true &&
-git remote set-url origin https://github.com/DilumAluthge/PredictMDExtra.jl.git &&
-git remote set-url --push origin git@github.com:DilumAluthge/PredictMDExtra.jl.git &&
+git remote set-url origin https://github.com/bcbi/PredictMDExtra.jl.git &&
+git remote set-url --push origin git@github.com:bcbi/PredictMDExtra.jl.git &&
 git checkout master &&
 git checkout develop &&
 git flow init -fd &&
@@ -236,20 +236,34 @@ git fetch --all --prune
 ```
 
 #### Step 3:
-Checkout the `develop` branch:
+Checkout the `master` branch:
 
 ```bash
-git checkout develop
+git checkout master
 ```
 
 #### Step 4:
-Pull the latest version of `develop`.
+Pull the latest version of `master`.
 
 ```bash
 git pull
 ```
 
 #### Step 5:
+Checkout the `develop` branch:
+
+```bash
+git checkout develop
+```
+
+#### Step 6:
+Pull the latest version of `develop`.
+
+```bash
+git pull
+```
+
+#### Step 7:
 Determine the version number that you are going to
 release. We use the Semantic Versioning
 system: [https://semver.org](https://semver.org). In Semantic
@@ -265,7 +279,7 @@ is `v3.5.12` and that we are adding functionality in a
 backwards-compatible manner. So we increment the `MINOR` version,
 which means the new version that we are tagging is `v3.6.0`.
 
-#### Step 6:
+#### Step 8:
 Start a new release branch.
 
 ```bash
@@ -278,7 +292,7 @@ git flow release start v3.6.0
 you can list all of the release branches by running the following
 command:* `git flow release list`
 
-#### Step 7:
+#### Step 9:
 Open the file `Project.toml` and change the version number
 on line 4. For example, if line 4 of `Project.toml` looks
 like this:
@@ -297,7 +311,7 @@ version = "3.6.0"
 (the line that begins with `version =`.
 Do not change any of the other lines.**
 
-#### Step 8:
+#### Step 10:
 Commit your changes:
 
 ```bash
@@ -309,17 +323,17 @@ An commit message editor will open. Type an appropriate commit
 message (e.g. "Bump version number"), save the file, and quit the
 editor.
 
-#### Step 9:
+#### Step 11:
 Push the release branch to GitHub.
 
 ```bash
 git push origin release/v3.6.0
 ```
 
-#### Step 10:
+#### Step 12:
 Wait for all of the tests to pass. You can check on
 the status of the tests by going to
-[https://github.com/DilumAluthge/PredictMDExtra.jl/branches/yours](https://github.com/DilumAluthge/PredictMDExtra.jl/branches/yours)
+[https://github.com/bcbi/PredictMDExtra.jl/branches/yours](https://github.com/bcbi/PredictMDExtra.jl/branches/yours)
 and scrolling down to find your release branch.
 
 * A yellow dot indicates that the tests are still running. Click on the
@@ -335,7 +349,7 @@ you can continue.**
 This is especially common with the Mac builds on Travis. You can usually
 resolve this error by restarting the failed build.*
 
-#### Step 11:
+#### Step 13:
 Once all of the tests have passed, you can finish
 tagging your release using the git-flow tools:
 
@@ -358,7 +372,7 @@ the file, and close the editor.
 Once you have finished all of the commits and tags, you must verify
 that you have correctly signed the release tag:
 
-#### Step 12:
+#### Step 14:
 Verify that you have correctly signed the release tag:
 ```bash
 git tag -v v3.6.0
@@ -372,28 +386,28 @@ gpg: Good signature from "Dilum Aluthge <dilum@aluthge.com>" [ultimate]
 ```
 
 then you have successfully signed the release, and you may proceed
-to Step 13. However, if you see a different message, then you have
+to the next step. However, if you see a different message, then you have
 not signed the tag successfully, and you may NOT proceed. At this
 point, you should
 [open a new issue](https://github.com/bcbi/PredictMD.jl/issues/new)
 and mention [@DilumAluthge](https://github.com/DilumAluthge) in the
 issue body.
 
-#### Step 13:
+#### Step 15:
 Temporarily modify the branch protections for
 the `master` and `develop` branches:
 
 First, the `master` branch: go to
-[https://github.com/DilumAluthge/PredictMDExtra.jl/settings/branches](https://github.com/DilumAluthge/PredictMDExtra.jl/settings/branches), scroll down, click the "Edit" button in the `master` row, scroll down, UNCHECK the box next to "Include administrators", scroll
+[https://github.com/bcbi/PredictMDExtra.jl/settings/branches](https://github.com/bcbi/PredictMDExtra.jl/settings/branches), scroll down, click the "Edit" button in the `master` row, scroll down, UNCHECK the box next to "Include administrators", scroll
 to the bottom of the page, and click the green "Save changes" button.
 You may be asked to enter your GitHub password.
 
 Now do the same thing for the `develop` branch: go to
-[https://github.com/DilumAluthge/PredictMDExtra.jl/settings/branches](https://github.com/DilumAluthge/PredictMDExtra.jl/settings/branches), scroll down, click the "Edit" button in the `develop` row, scroll down, UNCHECK the box next to "Include administrators", scroll
+[https://github.com/bcbi/PredictMDExtra.jl/settings/branches](https://github.com/bcbi/PredictMDExtra.jl/settings/branches), scroll down, click the "Edit" button in the `develop` row, scroll down, UNCHECK the box next to "Include administrators", scroll
 to the bottom of the page, and click the green "Save changes" button.
 You may be asked to enter your GitHub password.
 
-#### Step 14:
+#### Step 16:
 Push the new release to GitHub:
 
 ```bash
@@ -402,17 +416,17 @@ git push origin develop # push the updated "develop" branch
 git push origin --tags # push the new "v3.6.0" tag
 ```
 
-#### Step 15:
+#### Step 17:
 Create a release on GitHub using the tag you just
 created, signed, and pushed. First, go to
-[https://github.com/DilumAluthge/PredictMDExtra.jl/releases/new](https://github.com/DilumAluthge/PredictMDExtra.jl/releases/new).
+[https://github.com/bcbi/PredictMDExtra.jl/releases/new](https://github.com/bcbi/PredictMDExtra.jl/releases/new).
 In the text box that reads "Tag version", type the name of the tag you
 just released. For our example, you would type "v3.6.0". Next, in the
 text box that reads "Release title", type an appropriate title, such
 as "PredictMDExtra version 3.6.0". Finally, click the green
 "Publish release" button.
 
-#### Step 16:
+#### Step 18:
 Update the version number in the `develop` branch:
 
 First, use Semantic Versioning ([https://semver.org](https://semver.org))
@@ -451,7 +465,7 @@ version = "4.0.0-DEV"
 (the line that begins with `version =`.
 Do not change any of the other lines.**
 
-#### Step 17:
+#### Step 19:
 Commit your changes:
 
 ```bash
@@ -463,29 +477,29 @@ An commit message editor will open. Type an appropriate commit
 message (e.g. "Bump version number"), save the file, and quit
 the editor.
 
-#### Step 18:
+#### Step 20:
 Push the updated develop branch:
 ```bash
 git push origin develop
 ```
 
-#### Step 19:
+#### Step 21:
 Re-enable the branch protection settings:
 
 `master` branch: go to
-[https://github.com/DilumAluthge/PredictMDExtra.jl/settings/branches](https://github.com/DilumAluthge/PredictMDExtra.jl/settings/branches), scroll down, click the "Edit" button in the `master` row, scroll down, CHECK the box next to "Include administrators", scroll
+[https://github.com/bcbi/PredictMDExtra.jl/settings/branches](https://github.com/bcbi/PredictMDExtra.jl/settings/branches), scroll down, click the "Edit" button in the `master` row, scroll down, CHECK the box next to "Include administrators", scroll
 to the bottom of the page, and click the green "Save changes" button.
 You may be asked to enter your GitHub password.
 
 `develop` branch: go to
-[https://github.com/DilumAluthge/PredictMDExtra.jl/settings/branches](https://github.com/DilumAluthge/PredictMDExtra.jl/settings/branches), scroll down, click the "Edit" button in the `develop` row, scroll down, CHECK the box next to "Include administrators", scroll
+[https://github.com/bcbi/PredictMDExtra.jl/settings/branches](https://github.com/bcbi/PredictMDExtra.jl/settings/branches), scroll down, click the "Edit" button in the `develop` row, scroll down, CHECK the box next to "Include administrators", scroll
 to the bottom of the page, and click the green "Save changes" button.
 You may be asked to enter your GitHub password.
 
-#### Step 20:
+#### Step 22:
 Delete the release branch, which is no longer needed. To do
 this, go to
-[https://github.com/DilumAluthge/PredictMDExtra.jl/branches/yours](https://github.com/DilumAluthge/PredictMDExtra.jl/branches/yours),
+[https://github.com/bcbi/PredictMDExtra.jl/branches/yours](https://github.com/bcbi/PredictMDExtra.jl/branches/yours),
 scroll down to find the release branch, and then click the
 trash can icon to delete the branch.
 
