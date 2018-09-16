@@ -443,9 +443,10 @@ current version number to `v3.7.0-DEV`. In contrast, if the next
 version number will be `v4.0.0`, the you should set the current
 version number to `v4.0.0-DEV`.
 
-Third, checkout the `develop` branch:
+Third, checkout and pull the `develop` branch:
 ```bash
 git checkout develop
+git pull
 ```
 
 Fourth, open the `Project.toml` file and edit line 4
