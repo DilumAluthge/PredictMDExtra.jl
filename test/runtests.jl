@@ -5,6 +5,7 @@ import Pkg
 import Test
 
 @info(string("Julia depot paths: "), Base.DEPOT_PATH)
+@info(string("Julia load paths: "), Base.LOAD_PATH)
 
 @info(string("Julia version info: ",))
 InteractiveUtils.versioninfo(verbose=true)
@@ -26,6 +27,9 @@ import PredictMDExtra
 @info(string("Successfully imported PredictMDExtra.",))
 @info(string("PredictMDExtra version: "),PredictMDExtra.version(),)
 @info(string("PredictMDExtra package directory: "),PredictMDExtra.package_directory(),)
+
+@info(string("Julia depot paths: "), Base.DEPOT_PATH)
+@info(string("Julia load paths: "), Base.LOAD_PATH)
 
 Test.@testset "Unit tests              " begin
     testmodulea_filename::String = joinpath("TestModuleA", "TestModuleA.jl")
