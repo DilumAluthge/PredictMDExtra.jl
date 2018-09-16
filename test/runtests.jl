@@ -1,7 +1,35 @@
 ##### Beginning of file
 
-import PredictMDExtra
+import InteractiveUtils
+import Pkg
 import Test
+
+@info(string("Julia depot paths: "), Base.DEPOT_PATH)
+@info(string("Julia load paths: "), Base.LOAD_PATH)
+
+@info(string("Julia version info: ",))
+InteractiveUtils.versioninfo(verbose=true)
+
+@info(string("Output of Pkg.status():",),)
+Pkg.status()
+
+@info(string("Output of Pkg.status(Pkg.Types.PKGMODE_PROJECT):",),)
+Pkg.status(Pkg.Types.PKGMODE_PROJECT)
+
+@info(string("Output of Pkg.status(Pkg.Types.PKGMODE_MANIFEST):",),)
+Pkg.status(Pkg.Types.PKGMODE_MANIFEST)
+
+@info(string("Output of Pkg.status(Pkg.Types.PKGMODE_COMBINED):",),)
+Pkg.status(Pkg.Types.PKGMODE_COMBINED)
+
+@info(string("Attempting to import PredictMDExtra...",))
+import PredictMDExtra
+@info(string("Successfully imported PredictMDExtra.",))
+@info(string("PredictMDExtra version: "),PredictMDExtra.version(),)
+@info(string("PredictMDExtra package directory: "),PredictMDExtra.package_directory(),)
+
+@info(string("Julia depot paths: "), Base.DEPOT_PATH)
+@info(string("Julia load paths: "), Base.LOAD_PATH)
 
 Test.@testset "Unit tests              " begin
     testmodulea_filename::String = joinpath("TestModuleA", "TestModuleA.jl")
