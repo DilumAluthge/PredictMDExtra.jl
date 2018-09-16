@@ -26,7 +26,7 @@ julia --check-bounds=yes --color=yes -e '
 julia --check-bounds=yes --color=yes -e '
     import Coverage;
     import PredictMDExtra;
-    cd(PredictMDExtra.pkg_dir());
+    cd(PredictMDExtra.package_directory());
     Coverage.Codecov.submit(Coverage.Codecov.process_folder());
     '
 
