@@ -22,8 +22,8 @@ Test.@test( isa(Cassette, Module) )
 import CategoricalArrays
 Test.@test( isa(CategoricalArrays, Module) )
 
-import ClassImbalance
-Test.@test( isa(ClassImbalance, Module) )
+# import ClassImbalance
+# Test.@test( isa(ClassImbalance, Module) )
 
 import Combinatorics
 Test.@test( isa(Combinatorics, Module) )
@@ -97,8 +97,8 @@ Test.@test( isa(Literate, Module) )
 import MLBase
 Test.@test( isa(MLBase, Module) )
 
-import MNIST
-Test.@test( isa(MNIST, Module) )
+# import MNIST
+# Test.@test( isa(MNIST, Module) )
 
 import MbedTLS
 Test.@test( isa(MbedTLS, Module) )
@@ -121,8 +121,8 @@ Test.@test( isa(NumericalIntegration, Module) )
 import OnlineStats
 Test.@test( isa(OnlineStats, Module) )
 
-import PGFPlots
-Test.@test( isa(PGFPlots, Module) )
+# import PGFPlots
+# Test.@test( isa(PGFPlots, Module) )
 
 import PGFPlotsX
 Test.@test( isa(PGFPlotsX, Module) )
