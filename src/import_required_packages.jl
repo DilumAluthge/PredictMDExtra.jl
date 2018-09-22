@@ -8,7 +8,7 @@ import CSVFiles
 import CUDAapi
 import Cassette
 import CategoricalArrays
-import ClassImbalance
+# import ClassImbalance
 import Combinatorics
 import Compat
 import DataDeps
@@ -33,7 +33,7 @@ import Knet
 import LIBSVM
 import Literate
 import MLBase
-import MNIST
+# import MNIST
 import MbedTLS
 # import Merlin
 import Metalhead
@@ -41,7 +41,7 @@ import Mux
 import NamedArrays
 import NumericalIntegration
 import OnlineStats
-import PGFPlots
+# import PGFPlots
 import PGFPlotsX
 # import PackageCompiler
 import Pkg # stdlib
