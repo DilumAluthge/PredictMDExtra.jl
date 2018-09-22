@@ -22,8 +22,8 @@ Test.@test( isa(Cassette, Module) )
 import CategoricalArrays
 Test.@test( isa(CategoricalArrays, Module) )
 
-import ClassImbalance
-Test.@test( isa(ClassImbalance, Module) )
+# import ClassImbalance
+# Test.@test( isa(ClassImbalance, Module) )
 
 import Combinatorics
 Test.@test( isa(Combinatorics, Module) )
