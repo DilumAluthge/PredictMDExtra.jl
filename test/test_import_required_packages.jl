@@ -1,3 +1,5 @@
+import Test # stdlib
+
 import Atom
 Test.@test( isa(Atom, Module) )
 
@@ -133,7 +135,7 @@ Test.@test( isa(PGFPlotsX, Module) )
 import PooledArrays
 Test.@test( isa(PooledArrays, Module) )
 
-import Pkg
+import Pkg # stdlib
 Test.@test( isa(Pkg, Module) )
 
 import ProgressMeter
@@ -163,7 +165,7 @@ Test.@test( isa(SplitApplyCombine, Module) )
 import Tables
 Test.@test( isa(Tables, Module) )
 
-import Test
+import Test # stdlib
 Test.@test( isa(Test, Module) )
 
 import TextParse

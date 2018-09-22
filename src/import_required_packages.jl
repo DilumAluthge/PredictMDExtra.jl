@@ -44,7 +44,7 @@ import OnlineStats
 import PGFPlots
 import PGFPlotsX
 # import PackageCompiler
-import Pkg
+import Pkg # stdlib
 import PooledArrays
 import ProgressMeter
 import Query
@@ -55,7 +55,7 @@ import Requires
 import Revise
 import SplitApplyCombine
 import Tables
-import Test
+import Test # stdlib
 import TextParse
 # import TimeSeries
 import UnicodePlots
