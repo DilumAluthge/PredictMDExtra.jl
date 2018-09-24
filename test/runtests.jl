@@ -1,8 +1,8 @@
 ##### Beginning of file
 
-import InteractiveUtils
-import Pkg
-import Test
+import InteractiveUtils # stdlib
+import Pkg # stdlib
+import Test # stdlib
 
 @info(string("Julia depot paths: "), Base.DEPOT_PATH)
 @info(string("Julia load paths: "), Base.LOAD_PATH)

@@ -1,5 +1,7 @@
 ##### Beginning of file
 
+import Test # stdlib
+
 Test.@test( Base.VERSION >= VersionNumber("1.0") )
 
 Test.@test( PredictMDExtra.version() > VersionNumber(0) )
