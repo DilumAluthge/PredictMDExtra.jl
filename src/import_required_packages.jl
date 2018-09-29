@@ -35,6 +35,7 @@ import Literate
 import MLBase
 # import MNIST
 import MbedTLS
+import MemPool
 # import Merlin
 import Metalhead
 import Mux
