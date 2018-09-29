@@ -1,5 +1,7 @@
 ##### Beginning of file
 
+import Test # stdlib
+
 Test.@test( isdir(PredictMDExtra.package_directory()) )
 
 Test.@test( isdir(PredictMDExtra.package_directory("ci")) )
