@@ -10,7 +10,6 @@ import Cassette
 import CategoricalArrays
 # import ClassImbalance
 import Combinatorics
-import Compat
 import DataDeps
 import DataFrames
 import DataFramesMeta
