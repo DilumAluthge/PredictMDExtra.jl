@@ -105,6 +105,9 @@ Test.@test( isa(MLBase, Module) )
 import MbedTLS
 Test.@test( isa(MbedTLS, Module) )
 
+import MemPool
+Test.@test( isa(MemPool, Module) )
+
 # import Merlin
 # Test.@test( isa(Merlin, Module) )
 
