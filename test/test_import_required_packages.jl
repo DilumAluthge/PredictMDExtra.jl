@@ -30,9 +30,6 @@ Test.@test( isa(CategoricalArrays, Module) )
 import Combinatorics
 Test.@test( isa(Combinatorics, Module) )
 
-import Compat
-Test.@test( isa(Compat, Module) )
-
 import DataDeps
 Test.@test( isa(DataDeps, Module) )
 
