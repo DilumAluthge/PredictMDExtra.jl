@@ -24,14 +24,11 @@ Test.@test( isa(Cassette, Module) )
 import CategoricalArrays
 Test.@test( isa(CategoricalArrays, Module) )
 
-# import ClassImbalance
-# Test.@test( isa(ClassImbalance, Module) )
+import ClassImbalance
+Test.@test( isa(ClassImbalance, Module) )
 
 import Combinatorics
 Test.@test( isa(Combinatorics, Module) )
-
-import Compat
-Test.@test( isa(Compat, Module) )
 
 import DataDeps
 Test.@test( isa(DataDeps, Module) )
@@ -104,6 +101,9 @@ Test.@test( isa(MLBase, Module) )
 
 import MbedTLS
 Test.@test( isa(MbedTLS, Module) )
+
+import MemPool
+Test.@test( isa(MemPool, Module) )
 
 # import Merlin
 # Test.@test( isa(Merlin, Module) )

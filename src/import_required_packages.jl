@@ -8,9 +8,8 @@ import CSVFiles
 import CUDAapi
 import Cassette
 import CategoricalArrays
-# import ClassImbalance
+import ClassImbalance
 import Combinatorics
-import Compat
 import DataDeps
 import DataFrames
 import DataFramesMeta
@@ -35,6 +34,7 @@ import Literate
 import MLBase
 # import MNIST
 import MbedTLS
+import MemPool
 # import Merlin
 import Metalhead
 import Mux
