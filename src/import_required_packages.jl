@@ -61,6 +61,6 @@ import TextParse
 import UnicodePlots
 import ValueHistories
 import WebSockets
-import Zygote
+# import Zygote
 
 ##### End of file
