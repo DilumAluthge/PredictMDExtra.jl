@@ -10,8 +10,6 @@ PredictMDExtra is a meta-package that installs all of the Julia dependencies of 
 
 Installing PredictMDExtra does not install PredictMD. If you would like a convenient way of installing PredictMD and all of its Julia dependencies, see [PredictMDFull](https://github.com/bcbi/PredictMDFull.jl).
 
-Issues related to this repository should be submitted to the main PredictMD issue tracker: [https://github.com/bcbi/PredictMD.jl/issues](https://github.com/bcbi/PredictMD.jl/issues)
-
 | Table of Contents |
 | ----------------- |
 | [1. Installation](#installation) |
