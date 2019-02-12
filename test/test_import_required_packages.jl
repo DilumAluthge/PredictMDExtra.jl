@@ -183,5 +183,6 @@ Test.@test( isa(ValueHistories, Module) )
 import WebSockets
 Test.@test( isa(WebSockets, Module) )
 
-import Zygote
-Test.@test( isa(Zygote, Module) )
+# import Zygote
+# Test.@test( isa(Zygote, Module) )
+
