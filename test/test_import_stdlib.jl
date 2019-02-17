@@ -2,9 +2,9 @@ import Pkg # stdlib
 import PredictMDExtra
 import Test # stdlib
 
-package_list = _package_list()
+stdlib_list = _stdlib_list()
 
-for p in package_list
+for s in stdlib_list
     try
         eval(
             Base.Meta.parse(
