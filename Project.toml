@@ -25,6 +25,7 @@ GLM = "38e38edf-8417-5370-95a0-9cbb8c7f171a"
 GPUArrays = "0c68f7d7-f131-5f86-a1c3-88cf8149b2d7"
 HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
 IndirectArrays = "9b13fd28-a010-5f03-acff-a1bbcff69959"
+InteractiveUtils = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
 IterableTables = "1c8ee90f-4401-5389-894e-7a04a3dc0f4d"
 JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
 Knet = "1902f260-5fb4-5aff-8c31-6271790ab950"
@@ -50,6 +51,7 @@ Requires = "ae029012-a4dd-5104-9daa-d747884805df"
 Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
 SplitApplyCombine = "03a91e81-4c3e-53e1-a0a4-9c0c8f19dd66"
 Tables = "bd369af6-aec1-5ad0-b16a-f7cc5008161c"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 TextParse = "e0df1984-e451-5cb5-8b61-797a481e67e3"
 UnicodePlots = "b8865327-cd53-5732-bb35-84acbb429228"
 ValueHistories = "98cad3c8-aec3-5f06-8e41-884608649ab7"
@@ -58,10 +60,3 @@ Zygote = "e88e6eb3-aa80-5325-afca-941959d7151f"
 
 [compat]
 julia = "^1.1.0"
-
-[extras]
-InteractiveUtils = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
-Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
-
-[targets]
-test = ["Test", "InteractiveUtils"]
