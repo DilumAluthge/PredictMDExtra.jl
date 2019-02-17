@@ -58,10 +58,11 @@ end
 
 function _stdlib_list()::Vector{String}
     stdlib_list_raw::Vector{String} = String[
+        "InteractiveUtils",
         "Pkg",
         "Test",
         ]
-    stdlib_list::Vector{String} = sort(unique(strip.(package_list_raw)))
+    stdlib_list::Vector{String} = sort(unique(strip.(stdlib_list_raw)))
     return stdlib_list
 end
 

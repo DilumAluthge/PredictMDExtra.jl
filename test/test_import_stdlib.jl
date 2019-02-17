@@ -2,7 +2,7 @@ import Pkg # stdlib
 import PredictMDExtra
 import Test # stdlib
 
-stdlib_list = _stdlib_list()
+stdlib_list = PredictMDExtra._stdlib_list()
 
 for s in stdlib_list
     try
@@ -10,7 +10,7 @@ for s in stdlib_list
             Base.Meta.parse(
                 string(
                     "import ",
-                    x,
+                    s,
                     ),
                 ),
             )

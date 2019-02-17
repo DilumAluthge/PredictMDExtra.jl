@@ -1,5 +1,5 @@
 ##### Beginning of file
 
-PredictMD.import_all()
+PredictMDExtra.import_all()
 
 ##### End of file

@@ -1,5 +1,5 @@
 ##### Beginning of file
 
-PredictMD.install()
+PredictMDExtra.install()
 
 ##### End of file
