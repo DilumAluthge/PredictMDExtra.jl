@@ -46,6 +46,7 @@ Test.@testset "Unit tests              " begin
     include(testmoduleb_filename)
     include(testmodulec_filename)
     include(joinpath("test_package_directory.jl"))
+    include(joinpath("test_registry_url_list.jl"))
     include(joinpath("test_version.jl"))
 end
 
@@ -57,11 +58,7 @@ Test.@testset "Import standard library packages" begin
     include(joinpath("test_import_stdlib.jl"))
 end
 
-Test.@testset "Test install()" begin
-    include(joinpath("test_install.jl"))
-end
-
-Test.@testset "Import import_all()" begin
+Test.@testset "Test import_all()" begin
     include(joinpath("test_import_all.jl"))
 end
 
