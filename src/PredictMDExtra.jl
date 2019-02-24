@@ -18,8 +18,6 @@ include(joinpath("init.jl"))
 
 include(joinpath("package_list.jl"))
 
-include(joinpath("install.jl"))
-
 include(joinpath("import_all.jl"))
 
 end # End module PredictMDExtra
