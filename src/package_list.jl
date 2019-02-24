@@ -21,6 +21,7 @@ function _package_list()::Vector{String}
         "Flux",
         "GLM",
         "GPUArrays",
+        "GZip",
         "HTTP",
         "IterableTables",
         "IndirectArrays",

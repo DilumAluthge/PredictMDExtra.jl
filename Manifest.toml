@@ -317,9 +317,9 @@ version = "0.19.7"
 
 [[DoubleFloats]]
 deps = ["GenericLinearAlgebra", "LinearAlgebra", "Polynomials", "Random", "Test"]
-git-tree-sha1 = "3466d3735e0ca7f6fddf9f2c36ed9ac502941e9e"
+git-tree-sha1 = "5ad812aed76eaec0a428c53942cc4ea45f1b3df1"
 uuid = "497a8b3b-efae-58df-a0af-a86822472b78"
-version = "0.7.3"
+version = "0.7.4"
 
 [[EzXML]]
 deps = ["BinaryProvider", "Libdl", "Printf", "Test"]
@@ -393,6 +393,12 @@ deps = ["Adapt", "FFTW", "FillArrays", "LinearAlgebra", "Printf", "Random", "Ser
 git-tree-sha1 = "2b96d7f25fbea82c08a736d78cbf14df8d2100a5"
 uuid = "0c68f7d7-f131-5f86-a1c3-88cf8149b2d7"
 version = "0.6.1"
+
+[[GZip]]
+deps = ["Libdl", "Test"]
+git-tree-sha1 = "ee443ef166b29282301468d8af403e1ed8f5412e"
+uuid = "92fee26a-97fe-5a0c-ad85-20a5f3185b63"
+version = "0.5.0"
 
 [[GenericLinearAlgebra]]
 deps = ["LinearAlgebra", "Printf", "Random", "Test"]
