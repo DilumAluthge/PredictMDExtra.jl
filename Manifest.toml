@@ -317,9 +317,9 @@ version = "0.19.7"
 
 [[DoubleFloats]]
 deps = ["GenericLinearAlgebra", "LinearAlgebra", "Polynomials", "Random", "Test"]
-git-tree-sha1 = "5ad812aed76eaec0a428c53942cc4ea45f1b3df1"
+git-tree-sha1 = "3630ee8c22bca30a6d5b3ea5a890172a446bc172"
 uuid = "497a8b3b-efae-58df-a0af-a86822472b78"
-version = "0.7.4"
+version = "0.7.5"
 
 [[EzXML]]
 deps = ["BinaryProvider", "Libdl", "Printf", "Test"]

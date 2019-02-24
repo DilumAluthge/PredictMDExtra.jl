@@ -16,6 +16,7 @@ function _package_list()::Vector{String}
         "DataFramesMeta",
         "DecisionTree",
         "DefaultApplication",
+        "Distributions",
         "Documenter",
         "FileIO",
         "Flux",
@@ -47,6 +48,7 @@ function _package_list()::Vector{String}
         "Requires",
         "Revise",
         "SplitApplyCombine",
+        "StatsModels",
         "Tables",
         "TextParse",
         "UnicodePlots",
@@ -60,7 +62,10 @@ end
 function _stdlib_list()::Vector{String}
     stdlib_list_raw::Vector{String} = String[
         "InteractiveUtils",
+        "LinearAlgebra",
         "Pkg",
+        "Random",
+        "Statistics",
         "Test",
         ]
     stdlib_list::Vector{String} = sort(unique(strip.(stdlib_list_raw)))
