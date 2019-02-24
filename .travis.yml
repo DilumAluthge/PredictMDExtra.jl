@@ -13,7 +13,6 @@ git:
 
 julia:
     - "1.1"
-    - "nightly"
 
 language: julia
 
