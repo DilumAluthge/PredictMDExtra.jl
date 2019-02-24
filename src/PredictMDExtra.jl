@@ -20,6 +20,8 @@ include(joinpath("package_list.jl"))
 
 include(joinpath("import_all.jl"))
 
+include(joinpath("registry_url_list.jl"))
+
 end # End module PredictMDExtra
 
 ##### End of file
