@@ -48,6 +48,7 @@ function _package_list()::Vector{String}
         "Requires",
         "Revise",
         "SplitApplyCombine",
+        "StatsBase",
         "StatsModels",
         "Tables",
         "TextParse",
