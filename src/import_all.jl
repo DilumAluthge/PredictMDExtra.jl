@@ -9,13 +9,13 @@ function import_all(m::Module)
         Base.eval(
             m,
             Base.Meta.parse(
-                string("import $(s)"),
-                ),
-            )
-        Base.eval(
-            m,
-            Base.Meta.parse(
-                string("@debug(\"imported $(string(s))\")",),
+                string(
+                    "try ",
+                    "import $(string(s)); ",
+                    "@info(\"imported $(string(s))\"); ",
+                    "catch e1 @warn(\"ignoring exception: \", e1,); ",
+                    "end ",
+                    ),
                 ),
             )
     end
@@ -23,19 +23,32 @@ function import_all(m::Module)
         Base.eval(
             m,
             Base.Meta.parse(
-                string("try import $(p) catch e @debug(\"ignoring exception: \", e,); import Pkg; Pkg.add(\"$(p)\"); import $(p); end"),
+                string(
+                    "try ",
+                    "import $(string(p)); ",
+                    "catch e2 ",
+                    "@info(\"ignoring exception: \", e2,); ",
+                    "try ",
+                    "import Pkg; ",
+                    "Pkg.add(\"$(string(p))\"); ",
+                    "catch e3 ",
+                    "@info(\"ignoring exception: \", e3,); ",
+                    "end ",
+                    "end ",
+                    ),
                 ),
             )
         Base.eval(
             m,
             Base.Meta.parse(
-                string("import $(p)"),
-                ),
-            )
-        Base.eval(
-            m,
-            Base.Meta.parse(
-                string("@debug(\"imported $(string(p))\")",),
+                string(
+                    "try ",
+                    "import $(string(p)); ",
+                    "@info(\"imported $(string(p))\"); ",
+                    "catch e4 ",
+                    "@warn(\"ignoring exception: \", e4,); ",
+                    "end ",
+                    ),
                 ),
             )
     end

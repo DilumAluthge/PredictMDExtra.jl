@@ -317,9 +317,9 @@ version = "0.19.7"
 
 [[DoubleFloats]]
 deps = ["GenericLinearAlgebra", "LinearAlgebra", "Polynomials", "Random", "Test"]
-git-tree-sha1 = "5ad812aed76eaec0a428c53942cc4ea45f1b3df1"
+git-tree-sha1 = "3630ee8c22bca30a6d5b3ea5a890172a446bc172"
 uuid = "497a8b3b-efae-58df-a0af-a86822472b78"
-version = "0.7.4"
+version = "0.7.5"
 
 [[EzXML]]
 deps = ["BinaryProvider", "Libdl", "Printf", "Test"]
@@ -384,9 +384,9 @@ uuid = "9fa8497b-333b-5362-9e8d-4d0656e87820"
 
 [[GLM]]
 deps = ["Distributions", "LinearAlgebra", "Printf", "Random", "Reexport", "SparseArrays", "SpecialFunctions", "Statistics", "StatsBase", "StatsFuns", "StatsModels"]
-git-tree-sha1 = "7c3f988031022a26b84c1a5106a5161c7a573960"
+git-tree-sha1 = "2b65aee2c201ac17a97a285e9bfdcb5026c4e220"
 uuid = "38e38edf-8417-5370-95a0-9cbb8c7f171a"
-version = "1.1.0"
+version = "1.1.1"
 
 [[GPUArrays]]
 deps = ["Adapt", "FFTW", "FillArrays", "LinearAlgebra", "Printf", "Random", "Serialization", "StaticArrays", "Test"]
