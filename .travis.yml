@@ -15,7 +15,6 @@ env:
     matrix:
         - PREDICTMDEXTRA_IMPORT_ALL="true"
         - PREDICTMDEXTRA_IMPORT_ALL="false"
-        - PREDICTMDEXTRA_IMPORT_ALL=""
 
 git:
     depth: 99999999
