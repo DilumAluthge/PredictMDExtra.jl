@@ -1,6 +1,6 @@
 ##### Beginning of file
 
-function _predictmdextra_import_all(env::Associative = ENV)::Bool
+function _predictmdextra_import_all(env::AbstractDict = ENV)::Bool
     raw_env_value = strip(
         lowercase(
             strip(
