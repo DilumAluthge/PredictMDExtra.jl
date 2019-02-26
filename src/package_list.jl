@@ -54,7 +54,6 @@ function _package_list()::Vector{String}
         "TextParse",
         "UnicodePlots",
         "ValueHistories",
-        "WebSockets",
         ]
     package_list::Vector{String} = sort(unique(strip.(package_list_raw)))
     return package_list
