@@ -49,6 +49,5 @@ import Tables
 import TextParse
 import UnicodePlots
 import ValueHistories
-import WebSockets
 
 ##### End of file
