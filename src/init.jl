@@ -1,7 +1,7 @@
 ##### Beginning of file
 
 function __init__()::Nothing
-    import_all()
+    _import_all_on_init()
     _print_welcome_message()
     return nothing
 end
