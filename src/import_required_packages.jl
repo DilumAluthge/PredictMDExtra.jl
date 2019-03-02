@@ -19,6 +19,7 @@ import FileIO
 import Flux
 import GLM
 import GPUArrays
+import GZip
 import HTTP
 import IterableTables
 import IndirectArrays
@@ -48,6 +49,5 @@ import Tables
 import TextParse
 import UnicodePlots
 import ValueHistories
-import WebSockets
 
 ##### End of file

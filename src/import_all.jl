@@ -1,21 +1,40 @@
 ##### Beginning of file
 
+function _predictmdextra_import_all(env::AbstractDict = ENV)::Bool
+    raw_env_value = strip(
+        lowercase(
+            strip(
+                get(env, "PREDICTMDEXTRA_IMPORT_ALL", "")
+                )
+            )
+        )
+    return length(raw_env_value) == 0 || raw_env_value == "true"
+end
+
+_import_all_on_init() = _import_all_on_init(Main)
+
+function _import_all_on_init(m::Module)::Nothing
+    if _predictmdextra_import_all()
+        import_all(m)
+    end
+end
+
 import_all() = import_all(Main)
 
-function import_all(m::Module)
+function import_all(m::Module)::Nothing
     package_list::Vector{String} = sort(unique(strip.(_package_list())))
     stdlib_list::Vector{String} = sort(unique(strip.(_stdlib_list())))
     for s in stdlib_list
         Base.eval(
             m,
             Base.Meta.parse(
-                string("import $(s)"),
-                ),
-            )
-        Base.eval(
-            m,
-            Base.Meta.parse(
-                string("@debug(\"imported $(string(s))\")",),
+                string(
+                    "try ",
+                    "import $(string(s)); ",
+                    "@info(\"imported $(string(s))\"); ",
+                    "catch e1 @warn(\"ignoring exception: \", e1,); ",
+                    "end ",
+                    ),
                 ),
             )
     end
@@ -23,19 +42,32 @@ function import_all(m::Module)
         Base.eval(
             m,
             Base.Meta.parse(
-                string("try import $(p) catch e @debug(\"ignoring exception: \", e,); import Pkg; Pkg.add(\"$(p)\"); import $(p); end"),
+                string(
+                    "try ",
+                    "import $(string(p)); ",
+                    "catch e2 ",
+                    "@info(\"ignoring exception: \", e2,); ",
+                    "try ",
+                    "import Pkg; ",
+                    "Pkg.add(\"$(string(p))\"); ",
+                    "catch e3 ",
+                    "@info(\"ignoring exception: \", e3,); ",
+                    "end ",
+                    "end ",
+                    ),
                 ),
             )
         Base.eval(
             m,
             Base.Meta.parse(
-                string("import $(p)"),
-                ),
-            )
-        Base.eval(
-            m,
-            Base.Meta.parse(
-                string("@debug(\"imported $(string(p))\")",),
+                string(
+                    "try ",
+                    "import $(string(p)); ",
+                    "@info(\"imported $(string(p))\"); ",
+                    "catch e4 ",
+                    "@warn(\"ignoring exception: \", e4,); ",
+                    "end ",
+                    ),
                 ),
             )
     end
