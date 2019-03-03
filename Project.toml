@@ -1,7 +1,7 @@
 name = "PredictMDExtra"
 uuid = "d14d998a-9e6b-11e8-16d3-6f2879ea456d"
 authors = ["Dilum Aluthge <dilum@aluthge.com>"]
-version = "0.4.0-DEV"
+version = "0.4.0"
 
 [deps]
 Atom = "c52e3926-4ff0-5f6e-af25-54175e0327b1"
