@@ -5,6 +5,18 @@
 set -ev
 
 julia --check-bounds=yes --color=yes -e '
+    Pkg.Registry.add(Pkg.RegistrySpec(name="PredictMDRegistry",url="https://github.com/bcbi/PredictMDRegistry.git",uuid="26a550a3-39fe-4af4-af6d-e8814c2b6dd9",));
+    '
+
+julia --check-bounds=yes --color=yes -e '
+    Pkg.Registry.add("General");
+    '
+
+julia --check-bounds=yes --color=yes -e '
+    Pkg.Registry.update();
+    '
+
+julia --check-bounds=yes --color=yes -e '
     import Pkg;
     Pkg.build("PredictMDExtra");
     '
