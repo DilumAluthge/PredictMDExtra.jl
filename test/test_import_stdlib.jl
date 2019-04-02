@@ -15,6 +15,6 @@ for s in stdlib_list
                 ),
             )
     catch e
-        @warn("Ignoring exception: ", e,)
+        @debug("Ignoring exception: ", e,)
     end
 end
