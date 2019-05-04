@@ -1,7 +1,9 @@
 ##### Beginning of file
 
+import PredictMDExtra
+
 Test.@testset "Testing _print_list_of_package_imports()" begin
-    include(joinpath("test_package_list.jl"))
+    PredictMDExtra._print_list_of_package_imports()
 end
 
 ##### End of file
