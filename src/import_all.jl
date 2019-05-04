@@ -23,21 +23,6 @@ import_all() = import_all(Main)
 
 function import_all(m::Module)::Nothing
     package_list::Vector{String} = sort(unique(strip.(_package_list())))
-    stdlib_list::Vector{String} = sort(unique(strip.(_stdlib_list())))
-    for s in stdlib_list
-        Base.eval(
-            m,
-            Base.Meta.parse(
-                string(
-                    "try ",
-                    "import $(string(s)); ",
-                    "@info(\"imported $(string(s))\"); ",
-                    "catch e1 @debug(\"ignoring exception: \", e1,); ",
-                    "end ",
-                    ),
-                ),
-            )
-    end
     for p in package_list
         Base.eval(
             m,
@@ -45,13 +30,13 @@ function import_all(m::Module)::Nothing
                 string(
                     "try ",
                     "import $(string(p)); ",
-                    "catch e2 ",
-                    "@info(\"ignoring exception: \", e2,); ",
+                    "catch e1 ",
+                    "@info(\"ignoring exception: \", e1,); ",
                     "try ",
                     "import Pkg; ",
                     "Pkg.add(\"$(string(p))\"); ",
-                    "catch e3 ",
-                    "@info(\"ignoring exception: \", e3,); ",
+                    "catch e2 ",
+                    "@info(\"ignoring exception: \", e2,); ",
                     "end ",
                     "end ",
                     ),
@@ -64,8 +49,8 @@ function import_all(m::Module)::Nothing
                     "try ",
                     "import $(string(p)); ",
                     "@info(\"imported $(string(p))\"); ",
-                    "catch e4 ",
-                    "@debug(\"ignoring exception: \", e4,); ",
+                    "catch e3 ",
+                    "@error(\"ignoring exception: \", e3,); ",
                     "end ",
                     ),
                 ),
