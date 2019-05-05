@@ -89,7 +89,7 @@ end
 
 # """
 #     package_directory(m::Method, parts...)::String
-# 
+#
 # Equivalent to
 # `result = abspath(joinpath(abspath(package_directory(m)), parts...))`.
 # """
@@ -117,7 +117,7 @@ end
 
 # """
 #     package_directory(f::Function, parts...)::String
-# 
+#
 # Equivalent to
 # `result = abspath(joinpath(abspath(package_directory(f)), parts...))`.
 # """
@@ -145,7 +145,7 @@ end
 
 # """
 #     package_directory(f::Function, types::Tuple, parts...)::String
-# 
+#
 # Equivalent to
 # `result = abspath(joinpath(abspath(package_directory(f, types)), parts...))`.
 # """
