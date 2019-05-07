@@ -521,6 +521,8 @@ trash can icon to delete the branch.
 
 Tag the new release with [PredictMDRegistry](https://github.com/bcbi/PredictMDRegistry). Instructions are available here: [https://github.com/bcbi/PredictMDRegistry/blob/master/CONTRIBUTING.md](https://github.com/bcbi/PredictMDRegistry/blob/master/CONTRIBUTING.md)
 
+TODO: Add instructions for registering in the General registry with Registrator.jl.
+
 Congratulations, you are finished!
 
 <!-- End of file -->
