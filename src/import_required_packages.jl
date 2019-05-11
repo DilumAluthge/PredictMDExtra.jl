@@ -35,7 +35,6 @@ import IRTools
 import InteractiveUtils
 import IterableTables
 import JLD2
-import JuliaDB
 import Knet
 import LIBSVM
 import LaTeXStrings
@@ -52,7 +51,6 @@ import Metalhead
 import MultivariateStats
 import NNlib
 import NumericalIntegration
-import OnlineStats
 import PGFPlots
 import PGFPlotsX
 import PhysicalConstants
