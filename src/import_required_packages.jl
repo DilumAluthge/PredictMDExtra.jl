@@ -64,7 +64,6 @@ import RDatasets
 import ROCAnalysis
 import Random
 import RemoteFiles
-import Requires
 import Revise
 import Rmath
 import ScikitLearnBase
