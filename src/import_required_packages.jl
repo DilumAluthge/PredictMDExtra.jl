@@ -21,6 +21,7 @@ import DataFrames
 import Dates
 import DecisionTree
 import DefaultApplication
+import DelimitedFiles
 import Distances
 import Distributions
 import Documenter
@@ -67,6 +68,7 @@ import Requires
 import Revise
 import Rmath
 import ScikitLearnBase
+import StaticArrays
 import Statistics
 import StatsBase
 import StatsModels
