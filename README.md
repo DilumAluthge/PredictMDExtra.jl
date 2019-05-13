@@ -17,7 +17,7 @@ Installing PredictMDExtra does not install PredictMD. If you would like a conven
 
 ## Installation
 
-To install PredictMDExtra, open Julia and run the following two lines:
+PredictMDExtra is registered in the Julia General registry. Therefore, to install PredictMDExtra, simply open Julia and run the following two lines:
 ```julia
 import Pkg
 Pkg.add("PredictMDExtra")
