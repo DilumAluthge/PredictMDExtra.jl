@@ -23,6 +23,7 @@ import DecisionTree
 import DefaultApplication
 import DelimitedFiles
 import Distances
+import Distributed
 import Distributions
 import Documenter
 import FileIO
@@ -33,7 +34,6 @@ import GZip
 import GaussianProcesses
 import HTTP
 import IRTools
-import InteractiveUtils
 import IterableTables
 import JLD2
 import Knet
@@ -56,7 +56,6 @@ import PGFPlots
 import PGFPlotsX
 import PhysicalConstants
 import Pkg
-import PooledArrays
 import ProgressMeter
 import Query
 import RData
@@ -73,7 +72,6 @@ import StatsBase
 import StatsModels
 import Tables
 import Tau
-import Test
 import TikzPictures
 import TimeSeries
 import UnicodePlots
@@ -82,3 +80,4 @@ import ValueHistories
 import Zygote
 
 ##### End of file
+
