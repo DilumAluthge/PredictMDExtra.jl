@@ -4,17 +4,13 @@ import Pkg
 
 function _package_list()::Vector{String}
     project_toml::String = package_directory("Project.toml",)
-    test_project_toml::String = package_directory("test", "Project.toml",)
     package_list::Vector{String} = sort(
         unique(
             strip.(
-                vcat(
-                    collect(
-                        keys(Pkg.TOML.parsefile(project_toml)["deps"])
-                        ),
-                    collect(
-                        keys(Pkg.TOML.parsefile(test_project_toml)["deps"])
-                        ),
+                collect(
+                    keys(
+                        Pkg.TOML.parsefile(project_toml)["deps"]
+                        )
                     )
                 )
             )
