@@ -23,7 +23,7 @@ import DecisionTree
 import DefaultApplication
 import DelimitedFiles
 import Distances
-import Distributed
+using Distributed
 import Distributions
 import Documenter
 import FileIO
@@ -80,4 +80,3 @@ import ValueHistories
 import Zygote
 
 ##### End of file
-
