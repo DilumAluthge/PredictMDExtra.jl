@@ -17,10 +17,10 @@ Installing PredictMDExtra does not install PredictMD. If you would like a conven
 
 ## Installation
 
-To install PredictMDExtra, open Julia and run the following lines:
+PredictMDExtra is registered in the Julia General registry. Therefore, to install PredictMDExtra, simply open Julia and run the following two lines:
 ```julia
-import Pkg;
-Pkg.add(Pkg.PackageSpec(rev="master", url="https://github.com/bcbi/PredictMDExtra.jl",));
+import Pkg
+Pkg.add("PredictMDExtra")
 ```
 
 ## CI/CD
@@ -45,21 +45,6 @@ Pkg.add(Pkg.PackageSpec(rev="master", url="https://github.com/bcbi/PredictMDExtr
             src="https://travis-ci.org/bcbi/PredictMDExtra.jl.svg?branch=develop"
             /></a></td>
         </tr>
-        <!--<tr>
-            <td>AppVeyor CI</td>
-            <td>
-            <a
-            href="https://ci.appveyor.com/project/mirestrepo/predictmdextra-jl/history">
-            <img
-            title="AppVeyor build status (master)" src="https://ci.appveyor.com/api/projects/status/github/bcbi/PredictMDExtra.jl?branch=master&svg=true"
-            />
-            </a></td>
-            <td><a href="https://ci.appveyor.com/project/mirestrepo/predictmdextra-jl/history">
-            <img
-            src="https://ci.appveyor.com/api/projects/status/github/bcbi/PredictMDExtra.jl?branch=develop&svg=true"
-            />
-            </a></td>
-        </tr>-->
         <tr>
             <td>CodeCov</td>
             <td>
