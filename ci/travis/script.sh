@@ -25,10 +25,6 @@ julia --check-bounds=yes --color=yes -e '
     '
 
 julia --check-bounds=yes --color=yes -e '
-    import PredictMDExtra;
-    '
-
-julia --check-bounds=yes --color=yes -e '
     import Pkg;
     Pkg.test("PredictMDExtra"; coverage=true);
     '
