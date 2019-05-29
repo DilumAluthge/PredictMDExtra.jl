@@ -23,6 +23,12 @@ import Pkg
 Pkg.add("PredictMDExtra")
 ```
 
+That being said, PredictMDExtra is not very useful by itself. I recommend that you install PredictMDFull, which includes both PredictMD and PredictMDExtra. To install PredictMDFull, simply open Julia and run the following two lines:
+```julia
+import Pkg
+Pkg.add("PredictMDFull")
+```
+
 ## CI/CD
 
 <table>
