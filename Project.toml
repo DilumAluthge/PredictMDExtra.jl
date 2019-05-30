@@ -1,6 +1,6 @@
 name = "PredictMDExtra"
 uuid = "d14d998a-9e6b-11e8-16d3-6f2879ea456d"
-authors = ["Dilum Aluthge <dilum@aluthge.com>"]
+authors = ["Dilum Aluthge <dilum@aluthge.com>", "Brown Center for Biomedical Informatics <bcbi@brown.edu>"]
 version = "0.9.0-DEV"
 
 [deps]
