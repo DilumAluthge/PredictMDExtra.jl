@@ -3,13 +3,11 @@
 <table>
     <tbody>
         <tr>
-            <td>Repo Status</td>
+            <td>Bors</td>
             <td>
-            <a href="https://www.repostatus.org/#active">
+            <a href="https://bors.tech">
             <img
-            src="https://www.repostatus.org/badges/latest/active.svg"
-            alt="Project Status: Active – The project has reached a stable,
-            usable state and is being actively developed." />
+            src="https://bors.tech/images/badge_small.svg"/>
             </a></td>
         </tr>
         <tr>
