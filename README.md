@@ -46,9 +46,10 @@ see [PredictMDFull](https://github.com/bcbi/PredictMDFull.jl).
 ## Installation
 
 PredictMDExtra is registered in the Julia General registry. Therefore, to
-install PredictMDExtra, simply open Julia and run the following three lines:
+install PredictMDExtra, simply open Julia and run the following four lines:
 ```julia
 import Pkg
+Pkg.activate("PredictMDEnvironment"; shared = true)
 Pkg.add("PredictMDExtra")
 import PredictMDExtra
 ```
@@ -56,9 +57,10 @@ import PredictMDExtra
 That being said, PredictMDExtra is not very useful by itself. Instead, I
 recommend that you install PredictMDFull, which includes both PredictMD and
 PredictMDExtra. To install PredictMDFull, simply open Julia and run the
-following three lines:
+following four lines:
 ```julia
 import Pkg
+Pkg.activate("PredictMDEnvironment"; shared = true)
 Pkg.add("PredictMDFull")
 import PredictMDFull
 ```
