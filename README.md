@@ -1,36 +1,24 @@
 # PredictMDExtra
 
-<table>
-    <tbody>
-        <tr>
-            <td>Bors</td>
-            <td>
-            <a href="https://bors.tech">
-            <img
-            src="https://bors.tech/images/badge_small.svg"/>
-            </a></td>
-        </tr>
-        <tr>
-            <td>Travis CI</td>
-            <td>
-            <a href="https://travis-ci.org/bcbi/PredictMDExtra.jl/branches">
-            <img
-            src=
-            "https://travis-ci.org/bcbi/PredictMDExtra.jl.svg?branch=master"
-            /></a></td>
-        </tr>
-        <tr>
-            <td>CodeCov</td>
-            <td>
-            <a
-        href="https://codecov.io/gh/bcbi/PredictMDExtra.jl/branch/master">
-            <img
-            src=
+<a href="https://doi.org/10.5281/zenodo.1291209">
+<img
+src="https://zenodo.org/badge/109460252.svg"/>
+</a>
+<a href="https://bors.tech">
+<img
+src="https://bors.tech/images/badge_small.svg"/>
+</a>
+<a href="https://travis-ci.org/bcbi/PredictMDExtra.jl/branches">
+<img
+src=
+"https://travis-ci.org/bcbi/PredictMDExtra.jl.svg?branch=master"
+/></a>
+<a
+href="https://codecov.io/gh/bcbi/PredictMDExtra.jl/branch/master">
+<img
+src=
 "https://codecov.io/gh/bcbi/PredictMDExtra.jl/branch/master/graph/badge.svg"
-            /></a></td>
-        </tr>
-    </tbody>
-</table>
+/></a>
 
 PredictMDExtra is a meta-package that installs all of the Julia dependencies
 of [PredictMD](https://predictmd.net) (but not PredictMD itself).
