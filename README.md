@@ -1,10 +1,13 @@
 # PredictMDExtra
 
+<p>
 <a href="https://doi.org/10.5281/zenodo.1291209">
 <img
 src="https://zenodo.org/badge/109460252.svg"/>
 </a>
+</p>
 
+<p>
 <a href="https://bors.tech">
 <img
 src="https://bors.tech/images/badge_small.svg"/>
@@ -20,6 +23,7 @@ href="https://codecov.io/gh/bcbi/PredictMDExtra.jl/branch/master">
 src=
 "https://codecov.io/gh/bcbi/PredictMDExtra.jl/branch/master/graph/badge.svg"
 /></a>
+</p>
 
 PredictMDExtra is a meta-package that installs all of the Julia dependencies
 of [PredictMD](https://predictmd.net) (but not PredictMD itself).
