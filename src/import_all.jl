@@ -1,5 +1,3 @@
-##### Beginning of file
-
 function _predictmdextra_import_all(env::AbstractDict = ENV)::Bool
     raw_env_value = strip(
         lowercase(
@@ -57,5 +55,3 @@ function import_all(m::Module)::Nothing
             )
     end
 end
-
-##### End of file

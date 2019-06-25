@@ -1,7 +1,5 @@
 #!/bin/bash
 
-##### Beginning of file
-
 set -ev
 
 julia --check-bounds=yes --color=yes -e '
@@ -44,5 +42,3 @@ julia --check-bounds=yes --color=yes -e '
 cat Project.toml
 
 cat Manifest.toml
-
-##### End of file

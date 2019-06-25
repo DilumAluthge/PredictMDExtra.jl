@@ -1,5 +1,3 @@
-##### Beginning of file
-
 import Pkg
 
 function _package_list()::Vector{String}
@@ -41,5 +39,3 @@ function _print_list_of_package_imports(io::IO = stdout)::Nothing
     println()
     return nothing
 end
-
-##### End of file
