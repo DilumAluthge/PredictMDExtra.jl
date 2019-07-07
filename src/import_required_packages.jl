@@ -19,7 +19,6 @@ import MLJModels
 import Measurements
 import MemPool
 import MultivariateStats
-import PGFPlots
 import PhysicalConstants
 import Pkg
 import RemoteFiles
@@ -29,6 +28,5 @@ import StaticArrays
 import Tables
 import Tau
 import Unitful
-import Zygote
 
 ##### End of file
