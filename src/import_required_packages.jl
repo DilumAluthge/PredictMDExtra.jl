@@ -16,6 +16,7 @@ import MLDatasets
 import MLJ
 import MLJBase
 import MLJModels
+import Makie
 import MemPool
 import MultivariateStats
 import PackageCompiler
