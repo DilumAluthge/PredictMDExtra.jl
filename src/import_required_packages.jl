@@ -6,9 +6,11 @@
 import BenchmarkTools
 import CategoricalArrays
 import Clustering
+import Compose
 import Dates
 import Distances
 import Distributed
+import Gadfly
 import IRTools
 import MLDatasets
 import MLJ
@@ -16,6 +18,7 @@ import MLJBase
 import MLJModels
 import MemPool
 import MultivariateStats
+import PackageCompiler
 import Pkg
 import RemoteFiles
 import Rmath
