@@ -15,6 +15,6 @@ for p in package_list
                 ),
             )
     catch e
-        @error("Ignoring exception: ", e,)
+        @debug("Ignoring exception: ", e,)
     end
 end

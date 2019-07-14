@@ -5,17 +5,20 @@ Test.@testset "PredictMDExtra.jl" begin
     import Pkg # stdlib
     import Test # stdlib
 
-    @info(string("Julia depot paths: "), Base.DEPOT_PATH)
-    @info(string("Julia load paths: "), Base.LOAD_PATH)
+    @debug(string("Julia depot paths: "), Base.DEPOT_PATH)
+    @debug(string("Julia load paths: "), Base.LOAD_PATH)
 
-    @info(string("Julia version info: ",))
-    InteractiveUtils.versioninfo(verbose=true)
+    logger = Base.CoreLogging.current_logger_for_env(Base.CoreLogging.Debug, Symbol(splitext(basename(something(@__FILE__, "nothing")))[1]), something(@__MODULE__, "nothing"))
+    if !isnothing(logger)
+        @debug(string("Julia version info: ",))
+        InteractiveUtils.versioninfo(verbose=true)
+    end
 
-    @info(string("Attempting to import PredictMDExtra...",))
+    @debug(string("Attempting to import PredictMDExtra...",))
     import PredictMDExtra
-    @info(string("Successfully imported PredictMDExtra.",))
-    @info(string("PredictMDExtra version: "),PredictMDExtra.version(),)
-    @info(string("PredictMDExtra package directory: "),PredictMDExtra.package_directory(),)
+    @debug(string("Successfully imported PredictMDExtra.",))
+    @debug(string("PredictMDExtra version: "),PredictMDExtra.version(),)
+    @debug(string("PredictMDExtra package directory: "),PredictMDExtra.package_directory(),)
 
     logger = Base.CoreLogging.current_logger_for_env(Base.CoreLogging.Debug, Symbol(splitext(basename(something(@__FILE__, "nothing")))[1]), something(@__MODULE__, "nothing"))
     if !isnothing(logger)
@@ -99,8 +102,8 @@ Test.@testset "PredictMDExtra.jl" begin
         end
     end
 
-    @info(string("Julia depot paths: "), Base.DEPOT_PATH)
-    @info(string("Julia load paths: "), Base.LOAD_PATH)
+    @debug(string("Julia depot paths: "), Base.DEPOT_PATH)
+    @debug(string("Julia load paths: "), Base.LOAD_PATH)
 
     Test.@testset "Unit tests              " begin
         testmodulea_filename::String = joinpath("TestModuleA", "TestModuleA.jl")
