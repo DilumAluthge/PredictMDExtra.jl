@@ -8,6 +8,7 @@ import CategoricalArrays
 import Clustering
 import Compose
 import Dates
+import DeIdentification
 import Distances
 import Distributed
 import Gadfly
