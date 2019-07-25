@@ -24,7 +24,6 @@ import PackageCompiler
 import Pkg
 import RemoteFiles
 import Rmath
-import ScikitLearnBase
 import StaticArrays
 import Tables
 import Tau
