@@ -73,4 +73,5 @@ jobs:
           julia: 1.1
           env:
               - GROUP="Reverse Dependencies"
-          script: ./ci/travis/compat-predictmd-master.sh
+          # script: ./ci/travis/compat-predictmd-master.sh
+          script: true
