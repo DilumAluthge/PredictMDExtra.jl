@@ -13,7 +13,6 @@ import Distances
 import Distributed
 import Gadfly
 import IRTools
-import MLDatasets
 import MLJ
 import MLJBase
 import MLJModels
