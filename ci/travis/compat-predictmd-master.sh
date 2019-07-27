@@ -33,3 +33,14 @@ julia --check-bounds=yes --color=yes -e '
     import Pkg;
     Pkg.add(Pkg.PackageSpec(name = "PredictMD", rev = "master"))
     '
+    
+rm -rf $HOME/.julia
+cd $HOME
+mkdir temp-environment
+cd temp-environment
+touch Project.toml
+julia --project=. -e '
+    import Pkg;
+    Pkg.add(Pkg.PackageSpec(name = "PredictMD", rev = "master"));
+    Pkg.add(Pkg.PackageSpec(path = ENV["TRAVIS_BUILD_DIR"]))
+    '
