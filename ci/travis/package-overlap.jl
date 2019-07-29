@@ -8,8 +8,9 @@ end
 
 function allowed_intersection_predictmd_predictmdextra()::Vector{String}
     result::Vector{String} = String[
+        "CategoricalArrays",
         "Distributed",
-        "Pkg"
+        "Pkg",
         ]
     return result
 end
