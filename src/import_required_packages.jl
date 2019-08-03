@@ -12,20 +12,15 @@ import DeIdentification
 import Distances
 import Distributed
 import Gadfly
-import IRTools
 import MLJ
 import MLJBase
 import MLJModels
-import Makie
 import MemPool
 import MultivariateStats
 import PackageCompiler
 import Pkg
 import RemoteFiles
 import Rmath
-import StaticArrays
-import Tables
-import Tau
 import Unitful
 
 ##### End of file
