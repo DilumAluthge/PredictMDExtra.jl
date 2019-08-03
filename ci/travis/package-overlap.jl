@@ -11,6 +11,8 @@ function allowed_intersection_predictmd_predictmdextra()::Vector{String}
         "CategoricalArrays",
         "Distributed",
         "Pkg",
+        "StaticArrays",
+        "Tables",
         ]
     return result
 end
