@@ -45,13 +45,19 @@ after_script:
 ############################################################################
 
 stages:
+    - "Compatibility"
     - "Test"
-    - "Reverse Dependencies"
 
 ############################################################################
 
 jobs:
     include:
+        - stage: "Compatibility"
+          os: linux
+          julia: 1.1
+          env:
+              - GROUP="Compatibility"
+          script: ./ci/travis/compatibility.sh
         - stage: "Test"
           os: linux
           julia: 1.1
@@ -68,9 +74,3 @@ jobs:
               - JULIA_DEBUG="all"
               - PREDICTMDEXTRA_IMPORT_ALL="false"
           script: ./ci/travis/script.sh
-        - stage: "Reverse Dependencies"
-          os: linux
-          julia: 1.1
-          env:
-              - GROUP="Reverse Dependencies"
-          script: ./ci/travis/compat-predictmd-master.sh
