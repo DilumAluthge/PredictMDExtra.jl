@@ -54,13 +54,13 @@ jobs:
     include:
         - stage: "Compatibility"
           os: linux
-          julia: 1.1
+          julia: "1.2"
           env:
               - GROUP="Compatibility"
           script: ./ci/travis/compatibility.sh
         - stage: "Test"
           os: linux
-          julia: 1.1
+          julia: "1.2"
           env:
               - GROUP="Test"
               - JULIA_DEBUG="all"
@@ -68,7 +68,7 @@ jobs:
           script: ./ci/travis/script.sh
         - stage: "Test"
           os: linux
-          julia: 1.1
+          julia: "1.2"
           env:
               - GROUP="Test"
               - JULIA_DEBUG="all"
