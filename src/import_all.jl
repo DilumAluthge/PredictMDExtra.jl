@@ -1,14 +1,3 @@
-function _predictmdextra_import_all(env::AbstractDict = ENV)::Bool
-    raw_env_value = strip(
-        lowercase(
-            strip(
-                get(env, "PREDICTMDEXTRA_IMPORT_ALL", "")
-                )
-            )
-        )
-    return length(raw_env_value) == 0 || raw_env_value == "true"
-end
-
 import_all() = import_all(Main)
 
 function import_all(m::Module)::Nothing
