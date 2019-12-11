@@ -8,21 +8,21 @@ Test.@test( isdir(PredictMDExtra.package_directory("ci")) )
 
 Test.@test( isdir(PredictMDExtra.package_directory("ci", "travis")) )
 
-Test.@test( isdir(PredictMDExtra.package_directory(TestModuleA)) )
+Test.@test( isdir(PredictMDExtra.package_directory(PredictMDExtraTestModuleA)) )
 
-Test.@test( isdir(PredictMDExtra.package_directory(TestModuleB)) )
+Test.@test( isdir(PredictMDExtra.package_directory(PredictMDExtraTestModuleB)) )
 
 Test.@test( isdir( PredictMDExtra.package_directory(
-            TestModuleB, "directory2",
+            PredictMDExtraTestModuleB, "directory2",
             ) ) )
 
 Test.@test( isdir( PredictMDExtra.package_directory(
-            TestModuleB, "directory2", "directory3",
+            PredictMDExtraTestModuleB, "directory2", "directory3",
             ) ) )
 
 Test.@test_throws(
     ErrorException,
-    PredictMDExtra.package_directory(TestModuleC),
+    PredictMDExtra.package_directory(PredictMDExtraTestModuleC),
     )
 
 ##### End of file
