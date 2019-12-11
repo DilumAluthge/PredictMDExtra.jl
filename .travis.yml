@@ -64,13 +64,4 @@ jobs:
           env:
               - GROUP="Test"
               - JULIA_DEBUG="all"
-              - PREDICTMDEXTRA_IMPORT_ALL="true"
-          script: ./ci/travis/script.sh
-        - stage: "Test"
-          os: linux
-          julia: "1.2"
-          env:
-              - GROUP="Test"
-              - JULIA_DEBUG="all"
-              - PREDICTMDEXTRA_IMPORT_ALL="false"
           script: ./ci/travis/script.sh
