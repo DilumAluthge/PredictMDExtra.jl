@@ -26,9 +26,9 @@ Test.@test(
         PredictMDExtra.version(PredictMDExtra.eval, (Any,))
     )
 
-Test.@test( PredictMDExtra.version(TestModuleA) == VersionNumber("1.2.3") )
+Test.@test( PredictMDExtra.version(PredictMDExtraTestModuleA) == VersionNumber("1.2.3") )
 
-Test.@test( PredictMDExtra.version(TestModuleB) == VersionNumber("4.5.6") )
+Test.@test( PredictMDExtra.version(PredictMDExtraTestModuleB) == VersionNumber("4.5.6") )
 
 Test.@test_throws(
     ErrorException,
