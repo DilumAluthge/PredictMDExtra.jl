@@ -17,7 +17,6 @@ import MLJBase
 import MLJModels
 import MemPool
 import MultivariateStats
-import PackageCompiler
 import Pkg
 import PkgBenchmark
 import RemoteFiles
