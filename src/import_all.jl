@@ -9,14 +9,6 @@ function _predictmdextra_import_all(env::AbstractDict = ENV)::Bool
     return length(raw_env_value) == 0 || raw_env_value == "true"
 end
 
-_import_all_on_init() = _import_all_on_init(Main)
-
-function _import_all_on_init(m::Module)::Nothing
-    if _predictmdextra_import_all()
-        import_all(m)
-    end
-end
-
 import_all() = import_all(Main)
 
 function import_all(m::Module)::Nothing
