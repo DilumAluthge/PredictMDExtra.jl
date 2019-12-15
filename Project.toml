@@ -1,7 +1,7 @@
 name = "PredictMDExtra"
 uuid = "d14d998a-9e6b-11e8-16d3-6f2879ea456d"
 authors = ["Dilum Aluthge <dilum@aluthge.com>", "Brown Center for Biomedical Informatics <bcbi@brown.edu>"]
-version = "0.13.8"
+version = "0.13.9"
 
 [deps]
 BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
@@ -34,7 +34,7 @@ Compose = "0.7"
 Coverage = "1.0"
 DeIdentification = "0.8"
 Distances = "0.8"
-MLJ = "0.5"
+MLJ = "0.6"
 MLJBase = "0.9"
 MLJModels = "0.6"
 MemPool = "0.2"
