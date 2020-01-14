@@ -6,7 +6,6 @@
 import BenchmarkTools
 import CategoricalArrays
 import Clustering
-import Compose
 import Coverage
 import Dates
 import DeIdentification
