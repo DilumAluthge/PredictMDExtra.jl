@@ -27,7 +27,7 @@ Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
 
 [compat]
 BenchmarkTools = "0.4"
-CategoricalArrays = "0.7"
+CategoricalArrays = "0.8"
 Clustering = "0.13"
 Coverage = "1.0"
 DeIdentification = "0.8"
