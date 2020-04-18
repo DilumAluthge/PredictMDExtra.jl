@@ -1,7 +1,7 @@
 name = "PredictMDExtra"
 uuid = "d14d998a-9e6b-11e8-16d3-6f2879ea456d"
 authors = ["Dilum Aluthge <dilum@aluthge.com>", "Brown Center for Biomedical Informatics <bcbi@brown.edu>"]
-version = "0.13.14"
+version = "0.13.15"
 
 [deps]
 BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
@@ -28,7 +28,7 @@ Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
 [compat]
 BenchmarkTools = "0.4"
 CategoricalArrays = "0.7"
-Clustering = "0.13"
+Clustering = "0.13, 0, 1"
 Coverage = "1.0"
 DeIdentification = "0.8"
 Distances = "0.8"
