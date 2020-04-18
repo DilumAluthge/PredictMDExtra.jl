@@ -1,7 +1,7 @@
 name = "PredictMDExtra"
 uuid = "d14d998a-9e6b-11e8-16d3-6f2879ea456d"
 authors = ["Dilum Aluthge <dilum@aluthge.com>", "Brown Center for Biomedical Informatics <bcbi@brown.edu>"]
-version = "0.13.13"
+version = "0.13.14"
 
 [deps]
 BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
@@ -22,6 +22,7 @@ PkgBenchmark = "32113eaa-f34f-5b0d-bd6c-c81e245fc73d"
 RemoteFiles = "cbe49d4c-5af1-5b60-bb70-0a60aa018e1b"
 Rmath = "79098fc4-a85e-5d69-aa6a-4863f24498fa"
 TimerOutputs = "a759f4b9-e2f1-59dc-863e-4aeb61b1ea8f"
+UnicodePlots = "b8865327-cd53-5732-bb35-84acbb429228"
 Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
 
 [compat]
@@ -40,6 +41,7 @@ PkgBenchmark = "0.2"
 RemoteFiles = "0.3"
 Rmath = "0.6"
 TimerOutputs = "0.5"
+UnicodePlots = "1"
 Unitful = "1.0"
 julia = "1.1"
 

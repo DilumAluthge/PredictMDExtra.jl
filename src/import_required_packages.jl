@@ -21,6 +21,7 @@ import PkgBenchmark
 import RemoteFiles
 import Rmath
 import TimerOutputs
+import UnicodePlots
 import Unitful
 
 ##### End of file
