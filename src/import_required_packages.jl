@@ -20,6 +20,7 @@ import Pkg
 import PkgBenchmark
 import RemoteFiles
 import Rmath
+import StatsPlots
 import TimerOutputs
 import UnicodePlots
 import Unitful
