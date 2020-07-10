@@ -10,16 +10,10 @@ src="https://zenodo.org/badge/109460252.svg"/>
 
 <p>
 <a
-href="https://app.bors.tech/repositories/12271">
-<img
-src="https://bors.tech/images/badge_small.svg"
-alt="Bors enabled">
-</a>
-<a
-href="https://travis-ci.org/bcbi/PredictMDExtra.jl/branches">
+href="https://travis-ci.com/bcbi/PredictMDExtra.jl/branches">
 <img
 src=
-"https://travis-ci.org/bcbi/PredictMDExtra.jl.svg?branch=master"
+"https://travis-ci.com/bcbi/PredictMDExtra.jl.svg?branch=master"
 /></a>
 <a
 href="https://codecov.io/gh/bcbi/PredictMDExtra.jl/branch/master">

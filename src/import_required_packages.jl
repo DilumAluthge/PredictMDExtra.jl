@@ -5,6 +5,7 @@
 
 import BenchmarkTools
 import CategoricalArrays
+import ClusterManagers
 import Clustering
 import Coverage
 import Dates
