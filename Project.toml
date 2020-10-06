@@ -30,7 +30,7 @@ Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
 [compat]
 BenchmarkTools = "0.4, 0.5"
 CategoricalArrays = "0.7, 0.8"
-ClusterManagers = "0.3.2"
+ClusterManagers = "0.3.2, 0.4"
 Clustering = "0.13, 0.14, 0, 1"
 Coverage = "1.0"
 DeIdentification = "0.8"
